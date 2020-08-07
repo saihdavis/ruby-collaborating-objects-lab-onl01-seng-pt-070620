@@ -14,6 +14,6 @@ class MP3Importer
     end
 
     def import
-        flies.each do {|song| Song.new_by_filename(song)}
+        files.each {|song| Song.new_by_filename(song)}
     end
 end
